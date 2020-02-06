@@ -1,0 +1,2423 @@
+[06-Feb-2020 20:39:44 UTC] Enabled PHP logging
+[06-Feb-2020 20:39:44 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Shutting down MadelineProto (normally or due to an exception, idk)
+[06-Feb-2020 20:39:50 UTC] Enabled PHP logging
+[06-Feb-2020 20:39:50 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Waiting for shared lock of serialization lockfile...
+API:            	Shared lock acquired, deserializing...
+API:            	Shutting down MadelineProto (normally or due to an exception, idk)
+API:            	Shutting down MadelineProto (normally or due to an exception, idk)
+[06-Feb-2020 20:39:58 UTC] Enabled PHP logging
+[06-Feb-2020 20:39:58 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Waiting for shared lock of serialization lockfile...
+API:            	Shared lock acquired, deserializing...
+[06-Feb-2020 20:39:58 UTC] Enabled PHP logging
+[06-Feb-2020 20:39:58 UTC] PHP Warning:  Could not load the system's DNS configuration, using synchronous, blocking fallback in phar:///storage/ssd2/344/12500344/public_html/madeline.phar/vendor/amphp/dns/lib/Rfc1035StubResolver.php on line 188
+ContextConnector: 	OK!
+API:            	Shutting down MadelineProto (normally or due to an exception, idk)
+API:            	Shutting down MadelineProto (normally or due to an exception, idk)
+[06-Feb-2020 20:40:37 UTC] Enabled PHP logging
+[06-Feb-2020 20:40:37 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Waiting for shared lock of serialization lockfile...
+API:            	Shared lock acquired, deserializing...
+[06-Feb-2020 20:40:37 UTC] Enabled PHP logging
+[06-Feb-2020 20:40:37 UTC] PHP Warning:  Could not load the system's DNS configuration, using synchronous, blocking fallback in phar:///storage/ssd2/344/12500344/public_html/madeline.phar/vendor/amphp/dns/lib/Rfc1035StubResolver.php on line 188
+ContextConnector: 	OK!
+[06-Feb-2020 20:40:38 UTC] Enabled PHP logging
+TL:             	Loading TL schemes...
+TL:             	Parsing TL_mtproto_v1.tl...
+TL:             	CRC32 mismatch (29c1636d, 73f1f8dc) for msg_container#73f1f8dc messages:vector<%Message> = MessageContainer;
+TL:             	Parsing TL_telegram_v109.tl...
+TL:             	Parsing TL_secret.tl...
+TL:             	Parsing TL_calls.tl...
+TL:             	CRC32 mismatch (e8201c08, dbf948c1) for decryptedDataBlock#dbf948c1 random_id:long random_bytes:string flags:# voice_call_id:flags.2?int128 in_seq_no:flags.4?int out_seq_no:flags.4?int recent_received_mask:flags.5?int proto:flags.3?int extra:flags.1?string raw_data:flags.0?string = DecryptedDataBlock;
+TL:             	CRC32 mismatch (d20a6f5c, cc0d0e76) for simpleDataBlock#cc0d0e76 random_id:long random_bytes:string raw_data:string = DecryptedDataBlock;
+TL:             	Parsing TL_botAPI.tl...
+TL:             	Loading TL schemes...
+TL:             	Parsing TL_mtproto_v1.tl...
+TL:             	CRC32 mismatch (29c1636d, 73f1f8dc) for msg_container#73f1f8dc messages:vector<%Message> = MessageContainer;
+TL:             	Parsing TL_telegram_v109.tl...
+TL:             	Parsing TL_secret.tl...
+TL:             	Parsing TL_calls.tl...
+TL:             	CRC32 mismatch (e8201c08, dbf948c1) for decryptedDataBlock#dbf948c1 random_id:long random_bytes:string flags:# voice_call_id:flags.2?int128 in_seq_no:flags.4?int out_seq_no:flags.4?int recent_received_mask:flags.5?int proto:flags.3?int extra:flags.1?string raw_data:flags.0?string = DecryptedDataBlock;
+TL:             	CRC32 mismatch (d20a6f5c, cc0d0e76) for simpleDataBlock#cc0d0e76 random_id:long random_bytes:string raw_data:string = DecryptedDataBlock;
+TL:             	Parsing TL_botAPI.tl...
+DataCenter:     	Connecting to DC 2 from scratch
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2.0
+API:            	Running APIFactory...
+Connection:     	Connected to DC 2.0!
+DataCenterConnection: 	Restoring 0 messages to DC 2
+DataCenter:     	OK!
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+AuthKeyHandler: 	Generating permanent authorization key for DC 2...
+AuthKeyHandler: 	Requesting pq...
+ResponseHandler: 	Trying to assign a response of type ResPQ to its request...
+ResponseHandler: 	Does the request of return type ResPQ match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Factorization 1626571831992923423 = 1032639371 * 1575159613
+RSA:            	Encrypting with rsa key...
+AuthKeyHandler: 	Starting Diffie Hellman key exchange
+ResponseHandler: 	Trying to assign a response of type Server_DH_Params to its request...
+ResponseHandler: 	Does the request of return type Server_DH_Params match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Server-client time delta = 0.0 s
+AuthKeyHandler: 	Executing p/g checks (1/2)...
+AuthKeyHandler: 	Executing p/g checks (2/2)...
+AuthKeyHandler: 	Executing g check...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Generating b...
+AuthKeyHandler: 	Generating g_b...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Executing g_b check...
+AuthKeyHandler: 	Preparing client_DH_inner_data...
+AuthKeyHandler: 	Executing set_client_DH_params...
+ResponseHandler: 	Trying to assign a response of type Set_client_DH_params_answer to its request...
+ResponseHandler: 	Does the request of return type Set_client_DH_params_answer match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Generating authorization key...
+AuthKeyHandler: 	Diffie Hellman key exchange processed successfully!
+AuthKeyHandler: 	Auth key generated
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+MsgIdHandler:   	WARNING: Given message id (6790436243116550145) is bigger than or equal to the current limit (6790436243116483585). Consider syncing your date.
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Got new DC options, reconnecting
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 2
+Connection:     	Disconnecting from DC 2.0
+DataCenterConnection: 	Backed up  from DC 2.0
+Connection:     	Disconnected from DC 2.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 2
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2.0
+DataCenter:     	Connecting to DC 1 from scratch
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 1.0
+DataCenter:     	Connecting to DC 2_media from scratch
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2_media.0
+DataCenter:     	Connecting to DC 3 from scratch
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 3.0
+DataCenter:     	Connecting to DC 4 from scratch
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 4.0
+DataCenter:     	Connecting to DC 4_media from scratch
+DataCenterConnection: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 4_media.0
+DataCenter:     	Connecting to DC 5 from scratch
+DataCenterConnection: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 5.0
+Connection:     	Connected to DC 1.0!
+DataCenterConnection: 	Restoring 0 messages to DC 1
+DataCenter:     	OK!
+Connection:     	Connected to DC 3.0!
+DataCenterConnection: 	Restoring 0 messages to DC 3
+DataCenter:     	OK!
+Connection:     	Connected to DC 2.0!
+DataCenterConnection: 	Restoring 0 messages to DC 2
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.0!
+Connection:     	Connecting to DC 2_media.1
+Connection:     	Connected to DC 4.0!
+DataCenterConnection: 	Restoring 0 messages to DC 4
+DataCenter:     	OK!
+Connection:     	Connected to DC 4_media.0!
+Connection:     	Connecting to DC 4_media.1
+Connection:     	Connected to DC 2_media.1!
+Connection:     	Connecting to DC 2_media.2
+Connection:     	Connected to DC 4_media.1!
+Connection:     	Connecting to DC 4_media.2
+Connection:     	Connected to DC 5.0!
+DataCenterConnection: 	Restoring 0 messages to DC 5
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.2!
+Connection:     	Connecting to DC 2_media.3
+Connection:     	Connected to DC 4_media.2!
+Connection:     	Connecting to DC 4_media.3
+Connection:     	Connected to DC 2_media.3!
+Connection:     	Connecting to DC 2_media.4
+Connection:     	Connected to DC 4_media.3!
+Connection:     	Connecting to DC 4_media.4
+Connection:     	Connected to DC 2_media.4!
+Connection:     	Connecting to DC 2_media.5
+Connection:     	Connected to DC 4_media.4!
+Connection:     	Connecting to DC 4_media.5
+Connection:     	Connected to DC 2_media.5!
+Connection:     	Connecting to DC 2_media.6
+Connection:     	Connected to DC 4_media.5!
+Connection:     	Connecting to DC 4_media.6
+Connection:     	Connected to DC 2_media.6!
+Connection:     	Connecting to DC 2_media.7
+Connection:     	Connected to DC 4_media.6!
+Connection:     	Connecting to DC 4_media.7
+Connection:     	Connected to DC 2_media.7!
+Connection:     	Connecting to DC 2_media.8
+Connection:     	Connected to DC 4_media.7!
+Connection:     	Connecting to DC 4_media.8
+Connection:     	Connected to DC 2_media.8!
+Connection:     	Connecting to DC 2_media.9
+Connection:     	Connected to DC 4_media.8!
+Connection:     	Connecting to DC 4_media.9
+Connection:     	Connected to DC 2_media.9!
+Connection:     	Connecting to DC 2_media.10
+Connection:     	Connected to DC 4_media.9!
+Connection:     	Connecting to DC 4_media.10
+Connection:     	Connected to DC 2_media.10!
+Connection:     	Connecting to DC 2_media.11
+Connection:     	Connected to DC 4_media.10!
+Connection:     	Connecting to DC 4_media.11
+Connection:     	Connected to DC 2_media.11!
+Connection:     	Connecting to DC 2_media.12
+Connection:     	Connected to DC 4_media.11!
+Connection:     	Connecting to DC 4_media.12
+Connection:     	Connected to DC 2_media.12!
+Connection:     	Connecting to DC 2_media.13
+Connection:     	Connected to DC 4_media.12!
+Connection:     	Connecting to DC 4_media.13
+Connection:     	Connected to DC 2_media.13!
+Connection:     	Connecting to DC 2_media.14
+Connection:     	Connected to DC 4_media.13!
+Connection:     	Connecting to DC 4_media.14
+Connection:     	Connected to DC 2_media.14!
+Connection:     	Connecting to DC 2_media.15
+Connection:     	Connected to DC 4_media.14!
+Connection:     	Connecting to DC 4_media.15
+Connection:     	Connected to DC 2_media.15!
+Connection:     	Connecting to DC 2_media.16
+Connection:     	Connected to DC 4_media.15!
+Connection:     	Connecting to DC 4_media.16
+Connection:     	Connected to DC 2_media.16!
+Connection:     	Connecting to DC 2_media.17
+Connection:     	Connected to DC 4_media.16!
+Connection:     	Connecting to DC 4_media.17
+Connection:     	Connected to DC 2_media.17!
+Connection:     	Connecting to DC 2_media.18
+Connection:     	Connected to DC 4_media.17!
+Connection:     	Connecting to DC 4_media.18
+Connection:     	Connected to DC 2_media.18!
+Connection:     	Connecting to DC 2_media.19
+Connection:     	Connected to DC 4_media.18!
+Connection:     	Connecting to DC 4_media.19
+Connection:     	Connected to DC 2_media.19!
+DataCenterConnection: 	Restoring 0 messages to DC 2_media
+DataCenter:     	OK!
+Connection:     	Connected to DC 4_media.19!
+DataCenterConnection: 	Restoring 0 messages to DC 4_media
+DataCenter:     	OK!
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+AuthKeyHandler: 	Generating permanent authorization key for DC 1...
+AuthKeyHandler: 	Requesting pq...
+MTProto:        	Initing authorization DC 3...
+AuthKeyHandler: 	Generating permanent authorization key for DC 3...
+AuthKeyHandler: 	Requesting pq...
+MTProto:        	Initing authorization DC 4...
+AuthKeyHandler: 	Generating permanent authorization key for DC 4...
+AuthKeyHandler: 	Requesting pq...
+MTProto:        	Initing authorization DC 5...
+AuthKeyHandler: 	Generating permanent authorization key for DC 5...
+AuthKeyHandler: 	Requesting pq...
+ResponseHandler: 	Trying to assign a response of type ResPQ to its request...
+ResponseHandler: 	Does the request of return type ResPQ match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Factorization 1581597601618839053 = 1076782367 * 1468818259
+RSA:            	Encrypting with rsa key...
+AuthKeyHandler: 	Starting Diffie Hellman key exchange
+ResponseHandler: 	Trying to assign a response of type ResPQ to its request...
+ResponseHandler: 	Does the request of return type ResPQ match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Factorization 2473726593338484443 = 1516413511 * 1631300813
+RSA:            	Encrypting with rsa key...
+AuthKeyHandler: 	Starting Diffie Hellman key exchange
+ResponseHandler: 	Trying to assign a response of type ResPQ to its request...
+ResponseHandler: 	Does the request of return type ResPQ match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Factorization 1561072599409792349 = 1110090151 * 1406257499
+RSA:            	Encrypting with rsa key...
+AuthKeyHandler: 	Starting Diffie Hellman key exchange
+ResponseHandler: 	Trying to assign a response of type ResPQ to its request...
+ResponseHandler: 	Does the request of return type ResPQ match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Factorization 2237356143961087439 = 1284753313 * 1741467503
+RSA:            	Encrypting with rsa key...
+AuthKeyHandler: 	Starting Diffie Hellman key exchange
+ResponseHandler: 	Trying to assign a response of type Server_DH_Params to its request...
+ResponseHandler: 	Does the request of return type Server_DH_Params match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Server-client time delta = -2.0 s
+AuthKeyHandler: 	Executing p/g checks (1/2)...
+AuthKeyHandler: 	Executing p/g checks (2/2)...
+AuthKeyHandler: 	Executing g check...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Generating b...
+AuthKeyHandler: 	Generating g_b...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Executing g_b check...
+AuthKeyHandler: 	Preparing client_DH_inner_data...
+AuthKeyHandler: 	Executing set_client_DH_params...
+ResponseHandler: 	Trying to assign a response of type Server_DH_Params to its request...
+ResponseHandler: 	Does the request of return type Server_DH_Params match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Server-client time delta = -1.0 s
+AuthKeyHandler: 	Executing p/g checks (1/2)...
+AuthKeyHandler: 	Executing p/g checks (2/2)...
+AuthKeyHandler: 	Executing g check...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Generating b...
+AuthKeyHandler: 	Generating g_b...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Executing g_b check...
+AuthKeyHandler: 	Preparing client_DH_inner_data...
+AuthKeyHandler: 	Executing set_client_DH_params...
+ResponseHandler: 	Trying to assign a response of type Server_DH_Params to its request...
+ResponseHandler: 	Does the request of return type Server_DH_Params match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Server-client time delta = -1.0 s
+AuthKeyHandler: 	Executing p/g checks (1/2)...
+AuthKeyHandler: 	Executing p/g checks (2/2)...
+AuthKeyHandler: 	Executing g check...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Generating b...
+AuthKeyHandler: 	Generating g_b...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Executing g_b check...
+AuthKeyHandler: 	Preparing client_DH_inner_data...
+AuthKeyHandler: 	Executing set_client_DH_params...
+ResponseHandler: 	Trying to assign a response of type Server_DH_Params to its request...
+ResponseHandler: 	Does the request of return type Server_DH_Params match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Server-client time delta = -1.0 s
+AuthKeyHandler: 	Executing p/g checks (1/2)...
+AuthKeyHandler: 	Executing p/g checks (2/2)...
+AuthKeyHandler: 	Executing g check...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Generating b...
+AuthKeyHandler: 	Generating g_b...
+AuthKeyHandler: 	Executing g_a check (1/2)...
+AuthKeyHandler: 	Executing g_a check (2/2)...
+AuthKeyHandler: 	Executing g_b check...
+AuthKeyHandler: 	Preparing client_DH_inner_data...
+AuthKeyHandler: 	Executing set_client_DH_params...
+ResponseHandler: 	Trying to assign a response of type Set_client_DH_params_answer to its request...
+ResponseHandler: 	Does the request of return type Set_client_DH_params_answer match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Generating authorization key...
+AuthKeyHandler: 	Diffie Hellman key exchange processed successfully!
+AuthKeyHandler: 	Auth key generated
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+ResponseHandler: 	Trying to assign a response of type Set_client_DH_params_answer to its request...
+ResponseHandler: 	Does the request of return type Set_client_DH_params_answer match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Generating authorization key...
+AuthKeyHandler: 	Diffie Hellman key exchange processed successfully!
+AuthKeyHandler: 	Auth key generated
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+MsgIdHandler:   	WARNING: Given message id (6790436267674592257) is bigger than or equal to the current limit (6790436267674543105). Consider syncing your date.
+MTProto:        	Done initing authorization DC 1
+MsgIdHandler:   	WARNING: Given message id (6790436267702215681) is bigger than or equal to the current limit (6790436267702187009). Consider syncing your date.
+MTProto:        	Done initing authorization DC 3
+ResponseHandler: 	Trying to assign a response of type Set_client_DH_params_answer to its request...
+ResponseHandler: 	Does the request of return type Set_client_DH_params_answer match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Generating authorization key...
+AuthKeyHandler: 	Diffie Hellman key exchange processed successfully!
+AuthKeyHandler: 	Auth key generated
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+ResponseHandler: 	Trying to assign a response of type Set_client_DH_params_answer to its request...
+ResponseHandler: 	Does the request of return type Set_client_DH_params_answer match?
+ResponseHandler: 	Yes
+AuthKeyHandler: 	Generating authorization key...
+AuthKeyHandler: 	Diffie Hellman key exchange processed successfully!
+AuthKeyHandler: 	Auth key generated
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+MsgIdHandler:   	WARNING: Given message id (6790436275963162625) is bigger than or equal to the current limit (6790436275963108353). Consider syncing your date.
+MTProto:        	Done initing authorization DC 4
+MsgIdHandler:   	WARNING: Given message id (6790436276989677569) is bigger than or equal to the current limit (6790436276989603841). Consider syncing your date.
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+MsgIdHandler:   	WARNING: Given message id (6790436278184822785) is bigger than or equal to the current limit (6790436278184813569). Consider syncing your date.
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+WriteLoop:      	Writing client info (also executing help.getConfig)...
+MsgIdHandler:   	WARNING: Given message id (6790436279054969857) is bigger than or equal to the current limit (6790436279054917633). Consider syncing your date.
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Got new DC options, reconnecting
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+MTProto:        	Not reconnecting to DC 1 (-1)
+MTProto:        	Not reconnecting to DC 2_media (-1)
+MTProto:        	Not reconnecting to DC 3 (-1)
+MTProto:        	Not reconnecting to DC 4 (-1)
+MTProto:        	Not reconnecting to DC 4_media (-1)
+MTProto:        	Not reconnecting to DC 5 (-1)
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+MTProto:        	Not reconnecting to DC 1 (-1)
+MTProto:        	Not reconnecting to DC 2_media (-1)
+MTProto:        	Not reconnecting to DC 3 (-1)
+MTProto:        	Not reconnecting to DC 4 (-1)
+MTProto:        	Not reconnecting to DC 4_media (-1)
+MTProto:        	Not reconnecting to DC 5 (-1)
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+MTProto:        	Not fetching phone config
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+MTProto:        	Not reconnecting to DC 1 (-1)
+MTProto:        	Not reconnecting to DC 2_media (-1)
+MTProto:        	Not reconnecting to DC 3 (-1)
+MTProto:        	Not reconnecting to DC 4 (-1)
+MTProto:        	Not reconnecting to DC 4_media (-1)
+MTProto:        	Not reconnecting to DC 5 (-1)
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+MTProto:        	Not fetching phone config
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+MTProto:        	Not reconnecting to DC 1 (-1)
+MTProto:        	Not reconnecting to DC 2_media (-1)
+MTProto:        	Not reconnecting to DC 3 (-1)
+MTProto:        	Not reconnecting to DC 4 (-1)
+MTProto:        	Not reconnecting to DC 4_media (-1)
+MTProto:        	Not reconnecting to DC 5 (-1)
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+MTProto:        	Not fetching phone config
+MsgIdHandler:   	WARNING: Given message id (6790436279918381057) is bigger than or equal to the current limit (6790436279918353409). Consider syncing your date.
+MTProto:        	We're in US, nearest DC is 1.
+MTProto:        	Starting update system
+API:            	MadelineProto is ready!
+API:            	Shutting down MadelineProto (normally or due to an exception, idk)
+AbstractAPIFactory: 	Finished init asynchronously
+AbstractAPIFactory: 	Didn't serialize in a while, doing that now...
+Loop:           	Running async callable
+MTProto:        	Shutting down MadelineProto (normally or due to an exception, idk)
+PeriodicLoop:   	Got signal in call check, exiting
+PeriodicLoop:   	Got signal in serialize, exiting
+PeriodicLoop:   	Got signal in phone config, exiting
+PeriodicLoop:   	Got signal in config, exiting
+PeriodicLoop:   	Got signal in TOS, exiting
+DataCenterConnection: 	Disconnecting from shared DC 2
+Connection:     	Disconnecting from DC 2.0
+DataCenterConnection: 	Backed up  from DC 2.0
+Connection:     	Disconnected from DC 2.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 2
+DataCenterConnection: 	Disconnecting from shared DC 1
+Connection:     	Disconnecting from DC 1.0
+DataCenterConnection: 	Backed up  from DC 1.0
+Connection:     	Disconnected from DC 1.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 1
+DataCenterConnection: 	Disconnecting from shared DC 2_media
+PeriodicLoop:   	Got signal in robin loop DC 2_media, exiting
+Connection:     	Disconnecting from DC 2_media.0
+DataCenterConnection: 	Backed up  from DC 2_media.0
+Connection:     	Disconnected from DC 2_media.0
+Connection:     	Disconnecting from DC 2_media.1
+DataCenterConnection: 	Backed up  from DC 2_media.1
+Connection:     	Disconnected from DC 2_media.1
+Connection:     	Disconnecting from DC 2_media.2
+DataCenterConnection: 	Backed up  from DC 2_media.2
+Connection:     	Disconnected from DC 2_media.2
+Connection:     	Disconnecting from DC 2_media.3
+DataCenterConnection: 	Backed up  from DC 2_media.3
+Connection:     	Disconnected from DC 2_media.3
+Connection:     	Disconnecting from DC 2_media.4
+DataCenterConnection: 	Backed up  from DC 2_media.4
+Connection:     	Disconnected from DC 2_media.4
+Connection:     	Disconnecting from DC 2_media.5
+DataCenterConnection: 	Backed up  from DC 2_media.5
+Connection:     	Disconnected from DC 2_media.5
+Connection:     	Disconnecting from DC 2_media.6
+DataCenterConnection: 	Backed up  from DC 2_media.6
+Connection:     	Disconnected from DC 2_media.6
+Connection:     	Disconnecting from DC 2_media.7
+DataCenterConnection: 	Backed up  from DC 2_media.7
+Connection:     	Disconnected from DC 2_media.7
+Connection:     	Disconnecting from DC 2_media.8
+DataCenterConnection: 	Backed up  from DC 2_media.8
+Connection:     	Disconnected from DC 2_media.8
+Connection:     	Disconnecting from DC 2_media.9
+DataCenterConnection: 	Backed up  from DC 2_media.9
+Connection:     	Disconnected from DC 2_media.9
+Connection:     	Disconnecting from DC 2_media.10
+DataCenterConnection: 	Backed up  from DC 2_media.10
+Connection:     	Disconnected from DC 2_media.10
+Connection:     	Disconnecting from DC 2_media.11
+DataCenterConnection: 	Backed up  from DC 2_media.11
+Connection:     	Disconnected from DC 2_media.11
+Connection:     	Disconnecting from DC 2_media.12
+DataCenterConnection: 	Backed up  from DC 2_media.12
+Connection:     	Disconnected from DC 2_media.12
+Connection:     	Disconnecting from DC 2_media.13
+DataCenterConnection: 	Backed up  from DC 2_media.13
+Connection:     	Disconnected from DC 2_media.13
+Connection:     	Disconnecting from DC 2_media.14
+DataCenterConnection: 	Backed up  from DC 2_media.14
+Connection:     	Disconnected from DC 2_media.14
+Connection:     	Disconnecting from DC 2_media.15
+DataCenterConnection: 	Backed up  from DC 2_media.15
+Connection:     	Disconnected from DC 2_media.15
+Connection:     	Disconnecting from DC 2_media.16
+DataCenterConnection: 	Backed up  from DC 2_media.16
+Connection:     	Disconnected from DC 2_media.16
+Connection:     	Disconnecting from DC 2_media.17
+DataCenterConnection: 	Backed up  from DC 2_media.17
+Connection:     	Disconnected from DC 2_media.17
+Connection:     	Disconnecting from DC 2_media.18
+DataCenterConnection: 	Backed up  from DC 2_media.18
+Connection:     	Disconnected from DC 2_media.18
+Connection:     	Disconnecting from DC 2_media.19
+DataCenterConnection: 	Backed up  from DC 2_media.19
+Connection:     	Disconnected from DC 2_media.19
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 2_media
+DataCenterConnection: 	Disconnecting from shared DC 3
+Connection:     	Disconnecting from DC 3.0
+DataCenterConnection: 	Backed up  from DC 3.0
+Connection:     	Disconnected from DC 3.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 3
+DataCenterConnection: 	Disconnecting from shared DC 4
+Connection:     	Disconnecting from DC 4.0
+DataCenterConnection: 	Backed up  from DC 4.0
+Connection:     	Disconnected from DC 4.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 4
+DataCenterConnection: 	Disconnecting from shared DC 4_media
+PeriodicLoop:   	Got signal in robin loop DC 4_media, exiting
+Connection:     	Disconnecting from DC 4_media.0
+DataCenterConnection: 	Backed up  from DC 4_media.0
+Connection:     	Disconnected from DC 4_media.0
+Connection:     	Disconnecting from DC 4_media.1
+DataCenterConnection: 	Backed up  from DC 4_media.1
+Connection:     	Disconnected from DC 4_media.1
+Connection:     	Disconnecting from DC 4_media.2
+DataCenterConnection: 	Backed up  from DC 4_media.2
+Connection:     	Disconnected from DC 4_media.2
+Connection:     	Disconnecting from DC 4_media.3
+DataCenterConnection: 	Backed up  from DC 4_media.3
+Connection:     	Disconnected from DC 4_media.3
+Connection:     	Disconnecting from DC 4_media.4
+DataCenterConnection: 	Backed up  from DC 4_media.4
+Connection:     	Disconnected from DC 4_media.4
+Connection:     	Disconnecting from DC 4_media.5
+DataCenterConnection: 	Backed up  from DC 4_media.5
+Connection:     	Disconnected from DC 4_media.5
+Connection:     	Disconnecting from DC 4_media.6
+DataCenterConnection: 	Backed up  from DC 4_media.6
+Connection:     	Disconnected from DC 4_media.6
+Connection:     	Disconnecting from DC 4_media.7
+DataCenterConnection: 	Backed up  from DC 4_media.7
+Connection:     	Disconnected from DC 4_media.7
+Connection:     	Disconnecting from DC 4_media.8
+DataCenterConnection: 	Backed up  from DC 4_media.8
+Connection:     	Disconnected from DC 4_media.8
+Connection:     	Disconnecting from DC 4_media.9
+DataCenterConnection: 	Backed up  from DC 4_media.9
+Connection:     	Disconnected from DC 4_media.9
+Connection:     	Disconnecting from DC 4_media.10
+DataCenterConnection: 	Backed up  from DC 4_media.10
+Connection:     	Disconnected from DC 4_media.10
+Connection:     	Disconnecting from DC 4_media.11
+DataCenterConnection: 	Backed up  from DC 4_media.11
+Connection:     	Disconnected from DC 4_media.11
+Connection:     	Disconnecting from DC 4_media.12
+DataCenterConnection: 	Backed up  from DC 4_media.12
+Connection:     	Disconnected from DC 4_media.12
+Connection:     	Disconnecting from DC 4_media.13
+DataCenterConnection: 	Backed up  from DC 4_media.13
+Connection:     	Disconnected from DC 4_media.13
+Connection:     	Disconnecting from DC 4_media.14
+DataCenterConnection: 	Backed up  from DC 4_media.14
+Connection:     	Disconnected from DC 4_media.14
+Connection:     	Disconnecting from DC 4_media.15
+DataCenterConnection: 	Backed up  from DC 4_media.15
+Connection:     	Disconnected from DC 4_media.15
+Connection:     	Disconnecting from DC 4_media.16
+DataCenterConnection: 	Backed up  from DC 4_media.16
+Connection:     	Disconnected from DC 4_media.16
+Connection:     	Disconnecting from DC 4_media.17
+DataCenterConnection: 	Backed up  from DC 4_media.17
+Connection:     	Disconnected from DC 4_media.17
+Connection:     	Disconnecting from DC 4_media.18
+DataCenterConnection: 	Backed up  from DC 4_media.18
+Connection:     	Disconnected from DC 4_media.18
+Connection:     	Disconnecting from DC 4_media.19
+DataCenterConnection: 	Backed up  from DC 4_media.19
+Connection:     	Disconnected from DC 4_media.19
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 4_media
+DataCenterConnection: 	Disconnecting from shared DC 5
+Connection:     	Disconnecting from DC 5.0
+DataCenterConnection: 	Backed up  from DC 5.0
+Connection:     	Disconnected from DC 5.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 5
+MTProto:        	Successfully destroyed MadelineProto
+[06-Feb-2020 20:41:05 UTC] Enabled PHP logging
+[06-Feb-2020 20:41:05 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Waiting for shared lock of serialization lockfile...
+API:            	Shared lock acquired, deserializing...
+[06-Feb-2020 20:41:05 UTC] Enabled PHP logging
+[06-Feb-2020 20:41:05 UTC] Enabled PHP logging
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2.0
+DataCenter:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 1.0
+DataCenter:     	Reconnecting to DC 2_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2_media.0
+DataCenter:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 3.0
+DataCenter:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 4.0
+DataCenter:     	Reconnecting to DC 4_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 4_media.0
+DataCenter:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 5.0
+[06-Feb-2020 20:41:05 UTC] Enabled PHP logging
+Connection:     	Connected to DC 1.0!
+DataCenterConnection: 	Restoring 0 messages to DC 1
+DataCenter:     	OK!
+Connection:     	Connected to DC 3.0!
+DataCenterConnection: 	Restoring 0 messages to DC 3
+DataCenter:     	OK!
+Connection:     	Connected to DC 2.0!
+DataCenterConnection: 	Restoring 0 messages to DC 2
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.0!
+Connection:     	Connecting to DC 2_media.1
+Connection:     	Connected to DC 4.0!
+DataCenterConnection: 	Restoring 0 messages to DC 4
+DataCenter:     	OK!
+Connection:     	Connected to DC 4_media.0!
+Connection:     	Connecting to DC 4_media.1
+Connection:     	Connected to DC 2_media.1!
+Connection:     	Connecting to DC 2_media.2
+Connection:     	Connected to DC 4_media.1!
+Connection:     	Connecting to DC 4_media.2
+Connection:     	Connected to DC 5.0!
+DataCenterConnection: 	Restoring 0 messages to DC 5
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.2!
+Connection:     	Connecting to DC 2_media.3
+Connection:     	Connected to DC 4_media.2!
+Connection:     	Connecting to DC 4_media.3
+Connection:     	Connected to DC 2_media.3!
+Connection:     	Connecting to DC 2_media.4
+Connection:     	Connected to DC 4_media.3!
+Connection:     	Connecting to DC 4_media.4
+Connection:     	Connected to DC 2_media.4!
+Connection:     	Connecting to DC 2_media.5
+Connection:     	Connected to DC 4_media.4!
+Connection:     	Connecting to DC 4_media.5
+Connection:     	Connected to DC 2_media.5!
+Connection:     	Connecting to DC 2_media.6
+Connection:     	Connected to DC 4_media.5!
+Connection:     	Connecting to DC 4_media.6
+Connection:     	Connected to DC 2_media.6!
+Connection:     	Connecting to DC 2_media.7
+Connection:     	Connected to DC 4_media.6!
+Connection:     	Connecting to DC 4_media.7
+Connection:     	Connected to DC 2_media.7!
+Connection:     	Connecting to DC 2_media.8
+Connection:     	Connected to DC 4_media.7!
+Connection:     	Connecting to DC 4_media.8
+Connection:     	Connected to DC 2_media.8!
+Connection:     	Connecting to DC 2_media.9
+Connection:     	Connected to DC 4_media.8!
+Connection:     	Connecting to DC 4_media.9
+Connection:     	Connected to DC 2_media.9!
+Connection:     	Connecting to DC 2_media.10
+Connection:     	Connected to DC 4_media.9!
+Connection:     	Connecting to DC 4_media.10
+Connection:     	Connected to DC 2_media.10!
+Connection:     	Connecting to DC 2_media.11
+Connection:     	Connected to DC 4_media.10!
+Connection:     	Connecting to DC 4_media.11
+Connection:     	Connected to DC 2_media.11!
+Connection:     	Connecting to DC 2_media.12
+Connection:     	Connected to DC 4_media.11!
+Connection:     	Connecting to DC 4_media.12
+Connection:     	Connected to DC 2_media.12!
+Connection:     	Connecting to DC 2_media.13
+Connection:     	Connected to DC 4_media.12!
+Connection:     	Connecting to DC 4_media.13
+Connection:     	Connected to DC 2_media.13!
+Connection:     	Connecting to DC 2_media.14
+Connection:     	Connected to DC 4_media.13!
+Connection:     	Connecting to DC 4_media.14
+Connection:     	Connected to DC 2_media.14!
+Connection:     	Connecting to DC 2_media.15
+Connection:     	Connected to DC 4_media.14!
+Connection:     	Connecting to DC 4_media.15
+Connection:     	Connected to DC 2_media.15!
+Connection:     	Connecting to DC 2_media.16
+Connection:     	Connected to DC 4_media.15!
+Connection:     	Connecting to DC 4_media.16
+Connection:     	Connected to DC 2_media.16!
+Connection:     	Connecting to DC 2_media.17
+Connection:     	Connected to DC 4_media.16!
+Connection:     	Connecting to DC 4_media.17
+Connection:     	Connected to DC 2_media.17!
+Connection:     	Connecting to DC 2_media.18
+Connection:     	Connected to DC 4_media.17!
+Connection:     	Connecting to DC 4_media.18
+Connection:     	Connected to DC 2_media.18!
+Connection:     	Connecting to DC 2_media.19
+Connection:     	Connected to DC 4_media.18!
+Connection:     	Connecting to DC 4_media.19
+Connection:     	Connected to DC 2_media.19!
+DataCenterConnection: 	Restoring 0 messages to DC 2_media
+DataCenter:     	OK!
+Connection:     	Connected to DC 4_media.19!
+DataCenterConnection: 	Restoring 0 messages to DC 4_media
+DataCenter:     	OK!
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 2_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 4_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+MTProto:        	Not fetching phone config
+MsgIdHandler:   	WARNING: Given message id (6790436354845698049) is bigger than or equal to the current limit (6790436354845650945). Consider syncing your date.
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+ResponseHandler: 	Rejecting: users.getUsers
+ResponseHandler: 	Rejecting: Telegram returned an RPC error: The authorization key has expired (401) (AUTH_KEY_UNREGISTERED), caused by phar:///storage/ssd2/344/12500344/public_html/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:401<br>
+Revision: 17bacd1389f090fd5a83cf04ff9018dda1bbaf5e (AN UPDATE IS REQUIRED)<br>
+<br>
+TL trace:<br>
+['users.getUsers']<br><br>
+danog\MadelineProto\MTProtoSession\{closure}()<br><br>
+Coroutine.php(114): 	send([null,null,null,null])<br><br>
+Placeholder.php(37):	danog\MadelineProto\{closure}()<br><br>
+Coroutine.php(153): 	onResolve({})<br><br>
+Tools.php(423):     	__construct({})<br><br>
+ResponseHandler.php(402):	callFork({})<br><br>
+ResponseHandler.php(86):	handleResponse()<br><br>
+Driver.php(99):     	handleMessages("jb",null)<br><br>
+Driver.php(61):     	tick()<br><br>
+Loop.php(76):       	run()<br><br>
+Tools.php(302):     	run({})<br><br>
+AbstractAPIFactory.php(103):	wait({})<br><br>
+InternalDoc.php(5255):	__call("loop",[{},[]])<br><br>
+fileassistantbot.php(194):	loop({})<br>
+
+MTProto:        	AUTH_KEY_UNREGISTERED
+MTProto:        	Starting update system
+API:            	MadelineProto is ready!
+AbstractAPIFactory: 	Finished init asynchronously
+AbstractAPIFactory: 	Didn't serialize in a while, doing that now...
+Loop:           	Running async callable
+MTProto:        	Shutting down MadelineProto (normally or due to an exception, idk)
+PeriodicLoop:   	Got signal in call check, exiting
+PeriodicLoop:   	Got signal in serialize, exiting
+PeriodicLoop:   	Got signal in phone config, exiting
+PeriodicLoop:   	Got signal in config, exiting
+PeriodicLoop:   	Got signal in TOS, exiting
+DataCenterConnection: 	Disconnecting from shared DC 2
+Connection:     	Disconnecting from DC 2.0
+DataCenterConnection: 	Backed up  from DC 2.0
+Connection:     	Disconnected from DC 2.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 2
+DataCenterConnection: 	Disconnecting from shared DC 1
+Connection:     	Disconnecting from DC 1.0
+DataCenterConnection: 	Backed up  from DC 1.0
+Connection:     	Disconnected from DC 1.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 1
+DataCenterConnection: 	Disconnecting from shared DC 2_media
+PeriodicLoop:   	Got signal in robin loop DC 2_media, exiting
+Connection:     	Disconnecting from DC 2_media.0
+DataCenterConnection: 	Backed up  from DC 2_media.0
+Connection:     	Disconnected from DC 2_media.0
+Connection:     	Disconnecting from DC 2_media.1
+DataCenterConnection: 	Backed up  from DC 2_media.1
+Connection:     	Disconnected from DC 2_media.1
+Connection:     	Disconnecting from DC 2_media.2
+DataCenterConnection: 	Backed up  from DC 2_media.2
+Connection:     	Disconnected from DC 2_media.2
+Connection:     	Disconnecting from DC 2_media.3
+DataCenterConnection: 	Backed up  from DC 2_media.3
+Connection:     	Disconnected from DC 2_media.3
+Connection:     	Disconnecting from DC 2_media.4
+DataCenterConnection: 	Backed up  from DC 2_media.4
+Connection:     	Disconnected from DC 2_media.4
+Connection:     	Disconnecting from DC 2_media.5
+DataCenterConnection: 	Backed up  from DC 2_media.5
+Connection:     	Disconnected from DC 2_media.5
+Connection:     	Disconnecting from DC 2_media.6
+DataCenterConnection: 	Backed up  from DC 2_media.6
+Connection:     	Disconnected from DC 2_media.6
+Connection:     	Disconnecting from DC 2_media.7
+DataCenterConnection: 	Backed up  from DC 2_media.7
+Connection:     	Disconnected from DC 2_media.7
+Connection:     	Disconnecting from DC 2_media.8
+DataCenterConnection: 	Backed up  from DC 2_media.8
+Connection:     	Disconnected from DC 2_media.8
+Connection:     	Disconnecting from DC 2_media.9
+DataCenterConnection: 	Backed up  from DC 2_media.9
+Connection:     	Disconnected from DC 2_media.9
+Connection:     	Disconnecting from DC 2_media.10
+DataCenterConnection: 	Backed up  from DC 2_media.10
+Connection:     	Disconnected from DC 2_media.10
+Connection:     	Disconnecting from DC 2_media.11
+DataCenterConnection: 	Backed up  from DC 2_media.11
+Connection:     	Disconnected from DC 2_media.11
+Connection:     	Disconnecting from DC 2_media.12
+DataCenterConnection: 	Backed up  from DC 2_media.12
+Connection:     	Disconnected from DC 2_media.12
+Connection:     	Disconnecting from DC 2_media.13
+DataCenterConnection: 	Backed up  from DC 2_media.13
+Connection:     	Disconnected from DC 2_media.13
+Connection:     	Disconnecting from DC 2_media.14
+DataCenterConnection: 	Backed up  from DC 2_media.14
+Connection:     	Disconnected from DC 2_media.14
+Connection:     	Disconnecting from DC 2_media.15
+DataCenterConnection: 	Backed up  from DC 2_media.15
+Connection:     	Disconnected from DC 2_media.15
+Connection:     	Disconnecting from DC 2_media.16
+DataCenterConnection: 	Backed up  from DC 2_media.16
+Connection:     	Disconnected from DC 2_media.16
+Connection:     	Disconnecting from DC 2_media.17
+DataCenterConnection: 	Backed up  from DC 2_media.17
+Connection:     	Disconnected from DC 2_media.17
+Connection:     	Disconnecting from DC 2_media.18
+DataCenterConnection: 	Backed up  from DC 2_media.18
+Connection:     	Disconnected from DC 2_media.18
+Connection:     	Disconnecting from DC 2_media.19
+DataCenterConnection: 	Backed up  from DC 2_media.19
+Connection:     	Disconnected from DC 2_media.19
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 2_media
+DataCenterConnection: 	Disconnecting from shared DC 3
+Connection:     	Disconnecting from DC 3.0
+DataCenterConnection: 	Backed up  from DC 3.0
+Connection:     	Disconnected from DC 3.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 3
+DataCenterConnection: 	Disconnecting from shared DC 4
+Connection:     	Disconnecting from DC 4.0
+DataCenterConnection: 	Backed up  from DC 4.0
+Connection:     	Disconnected from DC 4.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 4
+DataCenterConnection: 	Disconnecting from shared DC 4_media
+PeriodicLoop:   	Got signal in robin loop DC 4_media, exiting
+Connection:     	Disconnecting from DC 4_media.0
+DataCenterConnection: 	Backed up  from DC 4_media.0
+Connection:     	Disconnected from DC 4_media.0
+Connection:     	Disconnecting from DC 4_media.1
+DataCenterConnection: 	Backed up  from DC 4_media.1
+Connection:     	Disconnected from DC 4_media.1
+Connection:     	Disconnecting from DC 4_media.2
+DataCenterConnection: 	Backed up  from DC 4_media.2
+Connection:     	Disconnected from DC 4_media.2
+Connection:     	Disconnecting from DC 4_media.3
+DataCenterConnection: 	Backed up  from DC 4_media.3
+Connection:     	Disconnected from DC 4_media.3
+Connection:     	Disconnecting from DC 4_media.4
+DataCenterConnection: 	Backed up  from DC 4_media.4
+Connection:     	Disconnected from DC 4_media.4
+Connection:     	Disconnecting from DC 4_media.5
+DataCenterConnection: 	Backed up  from DC 4_media.5
+Connection:     	Disconnected from DC 4_media.5
+Connection:     	Disconnecting from DC 4_media.6
+DataCenterConnection: 	Backed up  from DC 4_media.6
+Connection:     	Disconnected from DC 4_media.6
+Connection:     	Disconnecting from DC 4_media.7
+DataCenterConnection: 	Backed up  from DC 4_media.7
+Connection:     	Disconnected from DC 4_media.7
+Connection:     	Disconnecting from DC 4_media.8
+DataCenterConnection: 	Backed up  from DC 4_media.8
+Connection:     	Disconnected from DC 4_media.8
+Connection:     	Disconnecting from DC 4_media.9
+DataCenterConnection: 	Backed up  from DC 4_media.9
+Connection:     	Disconnected from DC 4_media.9
+Connection:     	Disconnecting from DC 4_media.10
+DataCenterConnection: 	Backed up  from DC 4_media.10
+Connection:     	Disconnected from DC 4_media.10
+Connection:     	Disconnecting from DC 4_media.11
+DataCenterConnection: 	Backed up  from DC 4_media.11
+Connection:     	Disconnected from DC 4_media.11
+Connection:     	Disconnecting from DC 4_media.12
+DataCenterConnection: 	Backed up  from DC 4_media.12
+Connection:     	Disconnected from DC 4_media.12
+Connection:     	Disconnecting from DC 4_media.13
+DataCenterConnection: 	Backed up  from DC 4_media.13
+Connection:     	Disconnected from DC 4_media.13
+Connection:     	Disconnecting from DC 4_media.14
+DataCenterConnection: 	Backed up  from DC 4_media.14
+Connection:     	Disconnected from DC 4_media.14
+Connection:     	Disconnecting from DC 4_media.15
+DataCenterConnection: 	Backed up  from DC 4_media.15
+Connection:     	Disconnected from DC 4_media.15
+Connection:     	Disconnecting from DC 4_media.16
+DataCenterConnection: 	Backed up  from DC 4_media.16
+Connection:     	Disconnected from DC 4_media.16
+Connection:     	Disconnecting from DC 4_media.17
+DataCenterConnection: 	Backed up  from DC 4_media.17
+Connection:     	Disconnected from DC 4_media.17
+Connection:     	Disconnecting from DC 4_media.18
+DataCenterConnection: 	Backed up  from DC 4_media.18
+Connection:     	Disconnected from DC 4_media.18
+Connection:     	Disconnecting from DC 4_media.19
+DataCenterConnection: 	Backed up  from DC 4_media.19
+Connection:     	Disconnected from DC 4_media.19
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 4_media
+DataCenterConnection: 	Disconnecting from shared DC 5
+Connection:     	Disconnecting from DC 5.0
+DataCenterConnection: 	Backed up  from DC 5.0
+Connection:     	Disconnected from DC 5.0
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 5
+MTProto:        	Successfully destroyed MadelineProto
+[06-Feb-2020 20:41:56 UTC] Enabled PHP logging
+[06-Feb-2020 20:41:56 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Waiting for shared lock of serialization lockfile...
+API:            	Shared lock acquired, deserializing...
+[06-Feb-2020 20:41:56 UTC] Enabled PHP logging
+[06-Feb-2020 20:41:56 UTC] Enabled PHP logging
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Disconnecting all before reconnect!
+DataCenterConnection: 	Disconnecting from shared DC 
+DataCenterConnection: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2.0
+DataCenter:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 1.0
+DataCenter:     	Reconnecting to DC 2_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 2_media.0
+DataCenter:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 3.0
+DataCenter:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 4.0
+DataCenter:     	Reconnecting to DC 4_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 4_media.0
+DataCenter:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection:     	Connecting to DC 5.0
+[06-Feb-2020 20:41:56 UTC] Enabled PHP logging
+Connection:     	Connected to DC 3.0!
+DataCenterConnection: 	Restoring 0 messages to DC 3
+DataCenter:     	OK!
+Connection:     	Connected to DC 1.0!
+DataCenterConnection: 	Restoring 0 messages to DC 1
+DataCenter:     	OK!
+Connection:     	Connected to DC 2.0!
+DataCenterConnection: 	Restoring 0 messages to DC 2
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.0!
+Connection:     	Connecting to DC 2_media.1
+Connection:     	Connected to DC 4.0!
+DataCenterConnection: 	Restoring 0 messages to DC 4
+DataCenter:     	OK!
+Connection:     	Connected to DC 4_media.0!
+Connection:     	Connecting to DC 4_media.1
+Connection:     	Connected to DC 2_media.1!
+Connection:     	Connecting to DC 2_media.2
+Connection:     	Connected to DC 4_media.1!
+Connection:     	Connecting to DC 4_media.2
+Connection:     	Connected to DC 5.0!
+DataCenterConnection: 	Restoring 0 messages to DC 5
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.2!
+Connection:     	Connecting to DC 2_media.3
+Connection:     	Connected to DC 4_media.2!
+Connection:     	Connecting to DC 4_media.3
+Connection:     	Connected to DC 2_media.3!
+Connection:     	Connecting to DC 2_media.4
+Connection:     	Connected to DC 4_media.3!
+Connection:     	Connecting to DC 4_media.4
+Connection:     	Connected to DC 2_media.4!
+Connection:     	Connecting to DC 2_media.5
+Connection:     	Connected to DC 4_media.4!
+Connection:     	Connecting to DC 4_media.5
+Connection:     	Connected to DC 2_media.5!
+Connection:     	Connecting to DC 2_media.6
+Connection:     	Connected to DC 4_media.5!
+Connection:     	Connecting to DC 4_media.6
+Connection:     	Connected to DC 2_media.6!
+Connection:     	Connecting to DC 2_media.7
+Connection:     	Connected to DC 4_media.6!
+Connection:     	Connecting to DC 4_media.7
+Connection:     	Connected to DC 2_media.7!
+Connection:     	Connecting to DC 2_media.8
+Connection:     	Connected to DC 4_media.7!
+Connection:     	Connecting to DC 4_media.8
+Connection:     	Connected to DC 2_media.8!
+Connection:     	Connecting to DC 2_media.9
+Connection:     	Connected to DC 4_media.8!
+Connection:     	Connecting to DC 4_media.9
+Connection:     	Connected to DC 2_media.9!
+Connection:     	Connecting to DC 2_media.10
+Connection:     	Connected to DC 4_media.9!
+Connection:     	Connecting to DC 4_media.10
+Connection:     	Connected to DC 2_media.10!
+Connection:     	Connecting to DC 2_media.11
+Connection:     	Connected to DC 4_media.10!
+Connection:     	Connecting to DC 4_media.11
+Connection:     	Connected to DC 2_media.11!
+Connection:     	Connecting to DC 2_media.12
+Connection:     	Connected to DC 4_media.11!
+Connection:     	Connecting to DC 4_media.12
+Connection:     	Connected to DC 2_media.12!
+Connection:     	Connecting to DC 2_media.13
+Connection:     	Connected to DC 4_media.12!
+Connection:     	Connecting to DC 4_media.13
+Connection:     	Connected to DC 2_media.13!
+Connection:     	Connecting to DC 2_media.14
+Connection:     	Connected to DC 4_media.13!
+Connection:     	Connecting to DC 4_media.14
+Connection:     	Connected to DC 4_media.14!
+Connection:     	Connecting to DC 4_media.15
+Connection:     	Connected to DC 2_media.14!
+Connection:     	Connecting to DC 2_media.15
+Connection:     	Connected to DC 4_media.15!
+Connection:     	Connecting to DC 4_media.16
+Connection:     	Connected to DC 2_media.15!
+Connection:     	Connecting to DC 2_media.16
+Connection:     	Connected to DC 4_media.16!
+Connection:     	Connecting to DC 4_media.17
+Connection:     	Connected to DC 2_media.16!
+Connection:     	Connecting to DC 2_media.17
+Connection:     	Connected to DC 4_media.17!
+Connection:     	Connecting to DC 4_media.18
+Connection:     	Connected to DC 2_media.17!
+Connection:     	Connecting to DC 2_media.18
+Connection:     	Connected to DC 4_media.18!
+Connection:     	Connecting to DC 4_media.19
+Connection:     	Connected to DC 2_media.18!
+Connection:     	Connecting to DC 2_media.19
+Connection:     	Connected to DC 4_media.19!
+DataCenterConnection: 	Restoring 0 messages to DC 4_media
+DataCenter:     	OK!
+Connection:     	Connected to DC 2_media.19!
+DataCenterConnection: 	Restoring 0 messages to DC 2_media
+DataCenter:     	OK!
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+DataCenter:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 2_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 4_media (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+DataCenter:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto:        	Already connected!
+DataCenter:     	OK!
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Updated config!
+MTProto:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+MTProto:        	Not fetching phone config
+MsgIdHandler:   	WARNING: Given message id (6790436574396902401) is bigger than or equal to the current limit (6790436574396880897). Consider syncing your date.
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+MTProto:        	Done initing authorization DC 1
+MTProto:        	Initing authorization DC 3...
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+ResponseHandler: 	Rejecting: users.getUsers
+ResponseHandler: 	Rejecting: Telegram returned an RPC error: The authorization key has expired (401) (AUTH_KEY_UNREGISTERED), caused by phar:///storage/ssd2/344/12500344/public_html/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:401<br>
+Revision: 17bacd1389f090fd5a83cf04ff9018dda1bbaf5e (AN UPDATE IS REQUIRED)<br>
+<br>
+TL trace:<br>
+['users.getUsers']<br><br>
+danog\MadelineProto\MTProtoSession\{closure}()<br><br>
+Coroutine.php(114): 	send([null,null,null,null])<br><br>
+Placeholder.php(37):	danog\MadelineProto\{closure}()<br><br>
+Coroutine.php(153): 	onResolve({})<br><br>
+Tools.php(423):     	__construct({})<br><br>
+ResponseHandler.php(402):	callFork({})<br><br>
+ResponseHandler.php(86):	handleResponse()<br><br>
+Driver.php(99):     	handleMessages("jb",null)<br><br>
+Driver.php(61):     	tick()<br><br>
+Loop.php(76):       	run()<br><br>
+Tools.php(302):     	run({})<br><br>
+AbstractAPIFactory.php(103):	wait({})<br><br>
+InternalDoc.php(5255):	__call("loop",[{},[]])<br><br>
+fileassistantbot.php(194):	loop({})<br>
+
+MTProto:        	AUTH_KEY_UNREGISTERED
+MTProto:        	Starting update system
+API:            	MadelineProto is ready!
+AbstractAPIFactory: 	Finished init asynchronously
+AbstractAPIFactory: 	Didn't serialize in a while, doing that now...
+Loop:           	Running async callable
+Login:          	Logging in as a bot...
+MsgIdHandler:   	WARNING: Given message id (6790436576431605761) is bigger than or equal to the current limit (6790436576431558657). Consider syncing your date.
+MTProto:        	Initing authorization...
+MTProto:        	Initing authorization DC 2...
+AuthKeyHandler: 	Trying to copy authorization from dc 4 to dc 2
+MsgIdHandler:   	WARNING: Given message id (6790436578703480833) is bigger than or equal to the current limit (6790436578703401985). Consider syncing your date.
+MTProto:        	Done initing authorization DC 2
+MTProto:        	Initing authorization DC 1...
+AuthKeyHandler: 	Trying to copy authorization from dc 4 to dc 1
+MTProto:        	Initing authorization DC 3...
+AuthKeyHandler: 	Trying to copy authorization from dc 4 to dc 3
+MTProto:        	Initing authorization DC 4...
+MTProto:        	Done initing authorization DC 4
+MTProto:        	Initing authorization DC 5...
+AuthKeyHandler: 	Trying to copy authorization from dc 4 to dc 5
+MsgIdHandler:   	WARNING: Given message id (6790436580286936065) is bigger than or equal to the current limit (6790436580286925825). Consider syncing your date.
+MsgIdHandler:   	WARNING: Given message id (6790436580621514753) is bigger than or equal to the current limit (6790436580621487105). Consider syncing your date.
+MTProto:        	Done initing authorization DC 3
+MTProto:        	Done initing authorization DC 1
+MsgIdHandler:   	WARNING: Given message id (6790436582265369601) is bigger than or equal to the current limit (6790436582265319425). Consider syncing your date.
+MTProto:        	Done initing authorization DC 5
+MTProto:        	Initing authorization DC 2_media...
+MTProto:        	Done initing authorization DC 2_media
+MTProto:        	Initing authorization DC 4_media...
+MTProto:        	Done initing authorization DC 4_media
+MTProto:        	Starting update system
+Login:          	Logged in successfully!
+MTProto:        	Starting update system
+Loop:           	Starting event loop
+Exception:      	set_time_limit() has been disabled for security reasons in Loop.php:79
+Loop:           	Will self-restart
+MTProto:        	Starting update system
+Loop:           	Started update loop
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 138, remote pts: 139, computed pts: 139, msg id: 87, channel id: 
+UpdateHandler:  	Parsing updates (updateShortSentMessage) received via the socket...
+FeedLoop:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 139, remote pts: 140, computed pts: 140, msg id: 88, channel id: 
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 140, remote pts: 141, computed pts: 141, msg id: 89, channel id: 
+[06-Feb-2020 20:43:42 UTC] PHP Warning:  Could not load the system's DNS configuration, using synchronous, blocking fallback in phar:///storage/ssd2/344/12500344/public_html/madeline.phar/vendor/amphp/dns/lib/Rfc1035StubResolver.php on line 188
+UpdateHandler:  	Parsing updates (updateShortSentMessage) received via the socket...
+FeedLoop:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 141, remote pts: 142, computed pts: 142, msg id: 90, channel id: 
+ContextConnector: 	OK!
+MsgIdHandler:   	WARNING: Given message id (6790437033779421185) is bigger than or equal to the current limit (6790437033777911809). Consider syncing your date.
+MTProto:        	Upload progress: 0.65789473684211%
+MsgIdHandler:   	WARNING: Given message id (6790437034518511617) is bigger than or equal to the current limit (6790437034517493761). Consider syncing your date.
+MTProto:        	Upload progress: 1.3157894736842%
+MsgIdHandler:   	WARNING: Given message id (6790437034947732481) is bigger than or equal to the current limit (6790437034947722241). Consider syncing your date.
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 142, remote pts: 143, computed pts: 143, msg id: 90, channel id: 
+MsgIdHandler:   	WARNING: Given message id (6790437035144615937) is bigger than or equal to the current limit (6790437035143404545). Consider syncing your date.
+MTProto:        	Upload progress: 1.9736842105263%
+MsgIdHandler:   	WARNING: Given message id (6790437035418824705) is bigger than or equal to the current limit (6790437035418189825). Consider syncing your date.
+MTProto:        	Upload progress: 2.6315789473684%
+MsgIdHandler:   	WARNING: Given message id (6790437036548948993) is bigger than or equal to the current limit (6790437036547371009). Consider syncing your date.
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MsgIdHandler:   	WARNING: Given message id (6790437036726861825) is bigger than or equal to the current limit (6790437036726430721). Consider syncing your date.
+MTProto:        	Upload progress: 3.2894736842105%
+MTProto:        	Upload progress: 3.9473684210526%
+MsgIdHandler:   	WARNING: Given message id (6790437037696457729) is bigger than or equal to the current limit (6790437037695376385). Consider syncing your date.
+MTProto:        	Upload progress: 4.6052631578947%
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MsgIdHandler:   	WARNING: Given message id (6790437038163584001) is bigger than or equal to the current limit (6790437038162170881). Consider syncing your date.
+MTProto:        	Upload progress: 5.2631578947368%
+MsgIdHandler:   	WARNING: Given message id (6790437039502531585) is bigger than or equal to the current limit (6790437039501982721). Consider syncing your date.
+MsgIdHandler:   	WARNING: Given message id (6790437039475267585) is bigger than or equal to the current limit (6790437039474780161). Consider syncing your date.
+MTProto:        	Upload progress: 5.9210526315789%
+MTProto:        	Upload progress: 6.5789473684211%
+MsgIdHandler:   	WARNING: Given message id (6790437040676189185) is bigger than or equal to the current limit (6790437040675065857). Consider syncing your date.
+MTProto:        	Upload progress: 7.2368421052632%
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MsgIdHandler:   	WARNING: Given message id (6790437041092406273) is bigger than or equal to the current limit (6790437041091308545). Consider syncing your date.
+MTProto:        	Upload progress: 7.8947368421053%
+MsgIdHandler:   	WARNING: Given message id (6790437041990103041) is bigger than or equal to the current limit (6790437041988753409). Consider syncing your date.
+MTProto:        	Upload progress: 8.5526315789474%
+MsgIdHandler:   	WARNING: Given message id (6790437042270997505) is bigger than or equal to the current limit (6790437042270007297). Consider syncing your date.
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MTProto:        	Upload progress: 9.2105263157895%
+Files:          	Partial upload time: 3.5469739437103
+Files:          	Partial upload speed: 178.881471 mbps
+MsgIdHandler:   	WARNING: Given message id (6790437043553235969) is bigger than or equal to the current limit (6790437043551632385). Consider syncing your date.
+MTProto:        	Upload progress: 9.8684210526316%
+MsgIdHandler:   	WARNING: Given message id (6790437043697219585) is bigger than or equal to the current limit (6790437043695980545). Consider syncing your date.
+MTProto:        	Upload progress: 10.526315789474%
+MsgIdHandler:   	WARNING: Given message id (6790437044652657665) is bigger than or equal to the current limit (6790437044651661313). Consider syncing your date.
+MTProto:        	Upload progress: 11.184210526316%
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MsgIdHandler:   	WARNING: Given message id (6790437045129379841) is bigger than or equal to the current limit (6790437045128266753). Consider syncing your date.
+MTProto:        	Upload progress: 11.842105263158%
+MsgIdHandler:   	WARNING: Given message id (6790437046195813377) is bigger than or equal to the current limit (6790437046194228225). Consider syncing your date.
+MTProto:        	Upload progress: 12.5%
+MsgIdHandler:   	WARNING: Given message id (6790437046507992065) is bigger than or equal to the current limit (6790437046506907649). Consider syncing your date.
+MTProto:        	Upload progress: 13.157894736842%
+MTProto:        	Upload progress: 13.815789473684%
+MTProto:        	Upload progress: 14.473684210526%
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MTProto:        	Upload progress: 15.131578947368%
+MTProto:        	Upload progress: 15.789473684211%
+MTProto:        	Upload progress: 16.447368421053%
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 143, remote pts: 144, computed pts: 144, msg id: 91, channel id: 
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 144, remote pts: 145, computed pts: 145, msg id: 92, channel id: 
+MTProto:        	Upload progress: 17.105263157895%
+MTProto:        	Upload progress: 17.763157894737%
+MTProto:        	Upload progress: 18.421052631579%
+MTProto:        	Upload progress: 19.078947368421%
+MTProto:        	Upload progress: 19.736842105263%
+MTProto:        	Upload progress: 20.394736842105%
+MTProto:        	Upload progress: 21.052631578947%
+MTProto:        	Upload progress: 21.710526315789%
+MTProto:        	Upload progress: 22.368421052632%
+MTProto:        	Upload progress: 23.026315789474%
+Files:          	Partial upload time: 6.7916848659515
+Files:          	Partial upload speed: 93.421283 mbps
+MTProto:        	Upload progress: 23.684210526316%
+MTProto:        	Upload progress: 24.342105263158%
+MTProto:        	Upload progress: 25%
+MTProto:        	Upload progress: 25.657894736842%
+MTProto:        	Upload progress: 26.315789473684%
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 145, remote pts: 146, computed pts: 146, msg id: 91, channel id: 
+MTProto:        	Upload progress: 26.973684210526%
+MTProto:        	Upload progress: 27.631578947368%
+MTProto:        	Upload progress: 28.289473684211%
+MTProto:        	Upload progress: 28.947368421053%
+MTProto:        	Upload progress: 29.605263157895%
+MTProto:        	Upload progress: 30.263157894737%
+MTProto:        	Upload progress: 30.921052631579%
+MTProto:        	Upload progress: 31.578947368421%
+MTProto:        	Upload progress: 32.236842105263%
+MTProto:        	Upload progress: 32.894736842105%
+MTProto:        	Upload progress: 33.552631578947%
+MTProto:        	Upload progress: 34.210526315789%
+MTProto:        	Upload progress: 34.868421052632%
+MTProto:        	Upload progress: 35.526315789474%
+Files:          	Partial upload time: 10.021003007889
+Files:          	Partial upload speed: 63.315809 mbps
+MTProto:        	Upload progress: 36.184210526316%
+MTProto:        	Upload progress: 36.842105263158%
+MTProto:        	Upload progress: 37.5%
+MTProto:        	Upload progress: 38.157894736842%
+MTProto:        	Upload progress: 38.815789473684%
+MTProto:        	Upload progress: 39.473684210526%
+MTProto:        	Upload progress: 40.131578947368%
+MTProto:        	Upload progress: 40.789473684211%
+MTProto:        	Upload progress: 41.447368421053%
+MTProto:        	Upload progress: 42.105263157895%
+UpdateHandler:  	Parsing updates (updates) received via the socket...
+FeedLoop:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop:       	Resumed update feed loop generic
+FeedLoop:       	PTS OK. My pts: 146, remote pts: 147, computed pts: 147, msg id: 90, channel id: 
+MTProto:        	Upload progress: 42.763157894737%
+MTProto:        	Upload progress: 43.421052631579%
+MTProto:        	Upload progress: 44.078947368421%
+MTProto:        	Upload progress: 44.736842105263%
+MTProto:        	Upload progress: 45.394736842105%
+MTProto:        	Upload progress: 46.052631578947%
+MTProto:        	Upload progress: 46.710526315789%
+MTProto:        	Upload progress: 47.368421052632%
+MTProto:        	Upload progress: 48.026315789474%
+MTProto:        	Upload progress: 48.684210526316%
+Files:          	Partial upload time: 13.09423995018
+Files:          	Partial upload speed: 48.455498 mbps
+MTProto:        	Upload progress: 49.342105263158%
+MTProto:        	Upload progress: 50%
+MTProto:        	Upload progress: 50.657894736842%
+MTProto:        	Upload progress: 51.315789473684%
+MTProto:        	Upload progress: 51.973684210526%
+MTProto:        	Upload progress: 52.631578947368%
+MTProto:        	Upload progress: 53.289473684211%
+MTProto:        	Upload progress: 53.947368421053%
+MTProto:        	Upload progress: 54.605263157895%
+MTProto:        	Upload progress: 55.263157894737%
+MTProto:        	Upload progress: 55.921052631579%
+UpdateLoop:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop:     	Finished signaling updates in getUpdate loop generic, pausing
+MTProto:        	Upload progress: 56.578947368421%
+MTProto:        	Upload progress: 57.236842105263%
+MTProto:        	Upload progress: 57.894736842105%
+MTProto:        	Upload progress: 58.552631578947%
+MTProto:        	Upload progress: 59.210526315789%
+MTProto:        	Upload progress: 59.868421052632%
+MTProto:        	Upload progress: 60.526315789474%
+MTProto:        	Upload progress: 61.184210526316%
+MTProto:        	Upload progress: 61.842105263158%
+MTProto:        	Upload progress: 62.5%
+Files:          	Partial upload time: 16.549036026001
+Files:          	Partial upload speed: 38.339871 mbps
+MTProto:        	Upload progress: 63.157894736842%
+MTProto:        	Upload progress: 63.815789473684%
+Loop:           	Connecting to tcp://uptotelebot.000webhostapp.com:80
+Loop:           	Sending self-restart payload
+Loop:           	POST /fileassistantbot.php?MadelineSelfRestart=5745979895537863082 HTTP/1.1
+Host: uptotelebot.000webhostapp.com
+
+
+Loop:           	Payload sent with token 5745979895537863082, waiting for self-restart
+[06-Feb-2020 20:44:02 UTC] Enabled PHP logging
+[06-Feb-2020 20:44:02 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2019 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+API:            	Waiting for shared lock of serialization lockfile...
+API:            	Shared lock acquired, deserializing...
+[06-Feb-2020 20:44:02 UTC] Enabled PHP logging
+[06-Feb-2020 20:44:02 UTC] Enabled PHP logging
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Disconnecting all before reconnect!
+DataCenterConnection, uptotelebot: 	Disconnecting from shared DC 
+DataCenterConnection, uptotelebot: 	Backed up 0, added to 0 existing messages) from DC 
+DataCenter, uptotelebot:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 2.0
+DataCenter, uptotelebot:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 1.0
+DataCenter, uptotelebot:     	Reconnecting to DC 2_media (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 2_media.0
+DataCenter, uptotelebot:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 3.0
+DataCenter, uptotelebot:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 4.0
+DataCenter, uptotelebot:     	Reconnecting to DC 4_media (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 4_media.0
+DataCenter, uptotelebot:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+Connection, uptotelebot:     	Connecting to DC 5.0
+[06-Feb-2020 20:44:02 UTC] Enabled PHP logging
+Connection, uptotelebot:     	Connected to DC 1.0!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 1
+DataCenter, uptotelebot:     	OK!
+Connection, uptotelebot:     	Connected to DC 3.0!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 3
+DataCenter, uptotelebot:     	OK!
+Connection, uptotelebot:     	Connected to DC 2.0!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 2
+DataCenter, uptotelebot:     	OK!
+Connection, uptotelebot:     	Connected to DC 2_media.0!
+Connection, uptotelebot:     	Connecting to DC 2_media.1
+Connection, uptotelebot:     	Connected to DC 4.0!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 4
+DataCenter, uptotelebot:     	OK!
+Connection, uptotelebot:     	Connected to DC 4_media.0!
+Connection, uptotelebot:     	Connecting to DC 4_media.1
+Connection, uptotelebot:     	Connected to DC 2_media.1!
+Connection, uptotelebot:     	Connecting to DC 2_media.2
+Connection, uptotelebot:     	Connected to DC 4_media.1!
+Connection, uptotelebot:     	Connecting to DC 4_media.2
+Connection, uptotelebot:     	Connected to DC 5.0!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 5
+DataCenter, uptotelebot:     	OK!
+Connection, uptotelebot:     	Connected to DC 2_media.2!
+Connection, uptotelebot:     	Connecting to DC 2_media.3
+Connection, uptotelebot:     	Connected to DC 4_media.2!
+Connection, uptotelebot:     	Connecting to DC 4_media.3
+Connection, uptotelebot:     	Connected to DC 2_media.3!
+Connection, uptotelebot:     	Connecting to DC 2_media.4
+Connection, uptotelebot:     	Connected to DC 4_media.3!
+Connection, uptotelebot:     	Connecting to DC 4_media.4
+Connection, uptotelebot:     	Connected to DC 2_media.4!
+Connection, uptotelebot:     	Connecting to DC 2_media.5
+Connection, uptotelebot:     	Connected to DC 4_media.4!
+Connection, uptotelebot:     	Connecting to DC 4_media.5
+Connection, uptotelebot:     	Connected to DC 2_media.5!
+Connection, uptotelebot:     	Connecting to DC 2_media.6
+Connection, uptotelebot:     	Connected to DC 4_media.5!
+Connection, uptotelebot:     	Connecting to DC 4_media.6
+Connection, uptotelebot:     	Connected to DC 2_media.6!
+Connection, uptotelebot:     	Connecting to DC 2_media.7
+Connection, uptotelebot:     	Connected to DC 4_media.6!
+Connection, uptotelebot:     	Connecting to DC 4_media.7
+Connection, uptotelebot:     	Connected to DC 2_media.7!
+Connection, uptotelebot:     	Connecting to DC 2_media.8
+Connection, uptotelebot:     	Connected to DC 4_media.7!
+Connection, uptotelebot:     	Connecting to DC 4_media.8
+Connection, uptotelebot:     	Connected to DC 2_media.8!
+Connection, uptotelebot:     	Connecting to DC 2_media.9
+Connection, uptotelebot:     	Connected to DC 4_media.8!
+Connection, uptotelebot:     	Connecting to DC 4_media.9
+Connection, uptotelebot:     	Connected to DC 2_media.9!
+Connection, uptotelebot:     	Connecting to DC 2_media.10
+Connection, uptotelebot:     	Connected to DC 4_media.9!
+Connection, uptotelebot:     	Connecting to DC 4_media.10
+Connection, uptotelebot:     	Connected to DC 2_media.10!
+Connection, uptotelebot:     	Connecting to DC 2_media.11
+Connection, uptotelebot:     	Connected to DC 4_media.10!
+Connection, uptotelebot:     	Connecting to DC 4_media.11
+Connection, uptotelebot:     	Connected to DC 2_media.11!
+Connection, uptotelebot:     	Connecting to DC 2_media.12
+Connection, uptotelebot:     	Connected to DC 4_media.11!
+Connection, uptotelebot:     	Connecting to DC 4_media.12
+Connection, uptotelebot:     	Connected to DC 2_media.12!
+Connection, uptotelebot:     	Connecting to DC 2_media.13
+Connection, uptotelebot:     	Connected to DC 4_media.12!
+Connection, uptotelebot:     	Connecting to DC 4_media.13
+Connection, uptotelebot:     	Connected to DC 2_media.13!
+Connection, uptotelebot:     	Connecting to DC 2_media.14
+Connection, uptotelebot:     	Connected to DC 4_media.13!
+Connection, uptotelebot:     	Connecting to DC 4_media.14
+Connection, uptotelebot:     	Connected to DC 2_media.14!
+Connection, uptotelebot:     	Connecting to DC 2_media.15
+Connection, uptotelebot:     	Connected to DC 4_media.14!
+Connection, uptotelebot:     	Connecting to DC 4_media.15
+Connection, uptotelebot:     	Connected to DC 2_media.15!
+Connection, uptotelebot:     	Connecting to DC 2_media.16
+Connection, uptotelebot:     	Connected to DC 4_media.15!
+Connection, uptotelebot:     	Connecting to DC 4_media.16
+Connection, uptotelebot:     	Connected to DC 2_media.16!
+Connection, uptotelebot:     	Connecting to DC 2_media.17
+Connection, uptotelebot:     	Connected to DC 4_media.16!
+Connection, uptotelebot:     	Connecting to DC 4_media.17
+Connection, uptotelebot:     	Connected to DC 2_media.17!
+Connection, uptotelebot:     	Connecting to DC 2_media.18
+Connection, uptotelebot:     	Connected to DC 4_media.17!
+Connection, uptotelebot:     	Connecting to DC 4_media.18
+Connection, uptotelebot:     	Connected to DC 2_media.18!
+Connection, uptotelebot:     	Connecting to DC 2_media.19
+Connection, uptotelebot:     	Connected to DC 4_media.18!
+Connection, uptotelebot:     	Connecting to DC 4_media.19
+Connection, uptotelebot:     	Connected to DC 2_media.19!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 2_media
+DataCenter, uptotelebot:     	OK!
+Connection, uptotelebot:     	Connected to DC 4_media.19!
+DataCenterConnection, uptotelebot: 	Restoring 0 messages to DC 4_media
+DataCenter, uptotelebot:     	OK!
+MTProto, uptotelebot:        	Initing authorization...
+MTProto, uptotelebot:        	Initing authorization DC 2...
+MTProto, uptotelebot:        	Done initing authorization DC 2
+MTProto, uptotelebot:        	Initing authorization DC 1...
+MTProto, uptotelebot:        	Done initing authorization DC 1
+MTProto, uptotelebot:        	Initing authorization DC 3...
+MTProto, uptotelebot:        	Done initing authorization DC 3
+MTProto, uptotelebot:        	Initing authorization DC 4...
+MTProto, uptotelebot:        	Done initing authorization DC 4
+MTProto, uptotelebot:        	Initing authorization DC 5...
+MTProto, uptotelebot:        	Done initing authorization DC 5
+MTProto, uptotelebot:        	Initing authorization DC 2_media...
+MTProto, uptotelebot:        	Done initing authorization DC 2_media
+MTProto, uptotelebot:        	Initing authorization DC 4_media...
+MTProto, uptotelebot:        	Done initing authorization DC 4_media
+MTProto, uptotelebot:        	Updated config!
+MTProto, uptotelebot:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+DataCenter, uptotelebot:     	Reconnecting to DC 2 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.167.51:443 main DC 2, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+DataCenter, uptotelebot:     	Reconnecting to DC 1 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.175.55:443 main DC 1, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+DataCenter, uptotelebot:     	Reconnecting to DC 2_media (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.167.151:443 main DC 2_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+DataCenter, uptotelebot:     	Reconnecting to DC 3 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.175.100:443 main DC 3, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+DataCenter, uptotelebot:     	Reconnecting to DC 4 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.167.91:443 main DC 4, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+DataCenter, uptotelebot:     	Reconnecting to DC 4_media (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://149.154.165.120:443 main DC 4_media, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+DataCenter, uptotelebot:     	Reconnecting to DC 5 (-1) from existing
+DataCenterConnection, uptotelebot: 	Trying shared connection via tcp://91.108.56.105:443 main DC 5, via ipv4 using AbridgedStream => BufferedRawStream => DefaultStream (-1)
+MTProto, uptotelebot:        	Already connected!
+DataCenter, uptotelebot:     	OK!
+MTProto, uptotelebot:        	Initing authorization...
+MTProto, uptotelebot:        	Initing authorization DC 2...
+MTProto, uptotelebot:        	Done initing authorization DC 2
+MTProto, uptotelebot:        	Initing authorization DC 1...
+MTProto, uptotelebot:        	Done initing authorization DC 1
+MTProto, uptotelebot:        	Initing authorization DC 3...
+MTProto, uptotelebot:        	Done initing authorization DC 3
+MTProto, uptotelebot:        	Initing authorization DC 4...
+MTProto, uptotelebot:        	Done initing authorization DC 4
+MTProto, uptotelebot:        	Initing authorization DC 5...
+MTProto, uptotelebot:        	Done initing authorization DC 5
+MTProto, uptotelebot:        	Initing authorization DC 2_media...
+MTProto, uptotelebot:        	Done initing authorization DC 2_media
+MTProto, uptotelebot:        	Initing authorization DC 4_media...
+MTProto, uptotelebot:        	Done initing authorization DC 4_media
+MTProto, uptotelebot:        	Updated config!
+MTProto, uptotelebot:        	{
+    "_": "config",
+    "phonecalls_enabled": false,
+    "default_p2p_contacts": true,
+    "preload_featured_stickers": false,
+    "ignore_phone_entities": false,
+    "revoke_pm_inbox": true,
+    "blocked_mode": false,
+    "pfs_enabled": false,
+    "date": 1581021649,
+    "expires": 1581025704,
+    "test_mode": false,
+    "this_dc": 4,
+    "dc_txt_domain_name": "apv3.stel.com",
+    "chat_size_max": 200,
+    "megagroup_size_max": 200000,
+    "forwarded_count_max": 100,
+    "online_update_period_ms": 210000,
+    "offline_blur_timeout_ms": 5000,
+    "offline_idle_timeout_ms": 30000,
+    "online_cloud_timeout_ms": 300000,
+    "notify_cloud_delay_ms": 30000,
+    "notify_default_delay_ms": 1500,
+    "push_chat_period_ms": 60000,
+    "push_chat_limit": 2,
+    "saved_gifs_limit": 200,
+    "edit_time_limit": 172800,
+    "revoke_time_limit": 2147483647,
+    "revoke_pm_time_limit": 2147483647,
+    "rating_e_decay": 2419200,
+    "stickers_recent_limit": 200,
+    "stickers_faved_limit": 5,
+    "channels_read_media_period": 604800,
+    "pinned_dialogs_count_max": 5,
+    "pinned_infolder_count_max": 100,
+    "call_receive_timeout_ms": 20000,
+    "call_ring_timeout_ms": 90000,
+    "call_connect_timeout_ms": 30000,
+    "call_packet_timeout_ms": 10000,
+    "me_url_prefix": "https://t.me/",
+    "gif_search_username": "gif",
+    "venue_search_username": "foursquare",
+    "img_search_username": "bing",
+    "caption_length_max": 1024,
+    "message_length_max": 4096,
+    "webfile_dc_id": 4
+}
+MTProto, uptotelebot:        	Not fetching phone config
+MsgIdHandler, uptotelebot:   	WARNING: Given message id (6790437117982193665) is bigger than or equal to the current limit (6790437117982160897). Consider syncing your date.
+[06-Feb-2020 20:44:05 UTC] Enabled PHP logging
+MTProto, uptotelebot:        	Starting update system
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+MTProto, uptotelebot:        	Getting updates after deserialization...
+MTProto, uptotelebot:        	Starting update system
+API:            	MadelineProto is ready!
+AbstractAPIFactory, uptotelebot: 	Finished init asynchronously
+AbstractAPIFactory: 	Didn't serialize in a while, doing that now...
+Loop, uptotelebot:           	Running async callable
+MsgIdHandler, uptotelebot:   	WARNING: Given message id (6790437120154222593) is bigger than or equal to the current limit (6790437120154213377). Consider syncing your date.
+MTProto, uptotelebot:        	Starting update system
+Loop, uptotelebot:           	Starting event loop
+Exception:      	set_time_limit() has been disabled for security reasons in Loop.php:79
+Loop, uptotelebot:           	Self-restarted, restart token 5745979895537863082
+Loop, uptotelebot:           	Will self-restart
+MTProto, uptotelebot:        	Starting update system
+Loop, uptotelebot:           	Started update loop
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 148, remote pts: 148, computed pts: 148, msg id: 91, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 148, remote pts: 149, computed pts: 149, msg id: 93, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 149, remote pts: 150, computed pts: 150, msg id: 94, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 150, remote pts: 151, computed pts: 151, msg id: 93, channel id: 
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 151, remote pts: 152, computed pts: 152, msg id: 93, channel id: 
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 152, remote pts: 153, computed pts: 153, msg id: 95, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 153, remote pts: 154, computed pts: 154, msg id: 96, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 154, remote pts: 155, computed pts: 155, msg id: 96, channel id: 
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 155, remote pts: 156, computed pts: 156, msg id: 96, channel id: 
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 156, remote pts: 157, computed pts: 157, msg id: 97, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 157, remote pts: 158, computed pts: 158, msg id: 98, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 158, remote pts: 159, computed pts: 159, msg id: 97, channel id: 
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 159, remote pts: 160, computed pts: 160, msg id: 97, channel id: 
+UpdateLoop, uptotelebot:     	Finished parsing updates in getUpdate loop generic, now resuming feeders
+UpdateLoop, uptotelebot:     	Finished resuming feeders in getUpdate loop generic, signaling updates
+UpdateLoop, uptotelebot:     	Finished signaling updates in getUpdate loop generic, pausing
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 160, remote pts: 161, computed pts: 161, msg id: 99, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateNewMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 161, remote pts: 162, computed pts: 162, msg id: 100, channel id: 
+UpdateHandler, uptotelebot:  	Parsing updates (updates) received via the socket...
+FeedLoop, uptotelebot:       	Was fed an update of type updateEditMessage in update feed loop generic...
+FeedLoop, uptotelebot:       	Resumed update feed loop generic
+FeedLoop, uptotelebot:       	PTS OK. My pts: 162, remote pts: 163, computed pts: 163, msg id: 99, channel id: 
