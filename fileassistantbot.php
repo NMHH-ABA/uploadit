@@ -2,7 +2,7 @@
 <?php
 /**
  * Example bot.
- *
+ * 
  * Copyright 2016-2019 Daniil Gentili
  * (https://daniil.it)
  * This file is part of MadelineProto.
