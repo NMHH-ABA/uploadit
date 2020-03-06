@@ -1,16 +1,7 @@
 #!/usr/bin/env php
 <?php
-
-/**
- * UploaditRoBot
- * Simple Telegram bot to generate download link of files and upload files from URL
- * Based on MadelineProto
- * https://github.com/danog/MadelineProto
- * By TheDarkW3b
- * https://t.me/TheDarkW3b
- */
 define('FILES_PATH', __DIR__.'/files');
-define('WEBSERVER_BASE_URL', 'yourdomain.com');
+define('WEBSERVER_BASE_URL', 'https://uptotele.herokuapp.com/');
 define('FILES_EXPIRE_TIME', 24 * 3600); // in seconds
 
 set_time_limit(0);
