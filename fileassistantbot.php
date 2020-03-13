@@ -1,224 +1,207 @@
 #!/usr/bin/env php
 <?php
-define('FILES_PATH', __DIR__.'/files');
-define('WEBSERVER_BASE_URL', 'https://mdft.herokuapp.com');
-define('FILES_EXPIRE_TIME', 24 * 3600); // in seconds
+/**
+ * Example bot.
+ *
+ * Copyright 2016-2019 Daniil Gentili
+ * (https://daniil.it)
+ * This file is part of MadelineProto.
+ * MadelineProto is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ * MadelineProto is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ * You should have received a copy of the GNU General Public License along with MadelineProto.
+ * If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @author    Daniil Gentili <daniil@daniil.it>
+ * @copyright 2016-2019 Daniil Gentili <daniil@daniil.it>
+ * @license   https://opensource.org/licenses/AGPL-3.0 AGPLv3
+ *
+ * @link https://docs.madelineproto.xyz MadelineProto documentation
+ */
 
-set_time_limit(0);
+use danog\MadelineProto\Logger;
+use League\Uri\Contracts\UriException;
 
-if (!file_exists(__DIR__.'/madeline.php')) {
-    copy('https://phar.madelineproto.xyz/madeline.php', __DIR__.'/madeline.php');
+/*
+ * Various ways to load MadelineProto
+ */
+if (\file_exists('vendor/autoload.php')) {
+    include 'vendor/autoload.php';
+} else {
+    if (!\file_exists('madeline.php')) {
+        \copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
+    }
+    include 'madeline.php';
 }
-require __DIR__.'/madeline.php';
-require __DIR__.'/vendor/autoload.php';
 
-if (!is_dir(FILES_PATH)) {
-    mkdir(FILES_PATH, 0777, true);
-}
-
+/**
+ * Event handler class.
+ */
 class EventHandler extends \danog\MadelineProto\EventHandler
 {
-    private $latest_speedtest = [];
+    const START = "Send me a file URL and I will download it and send it to you!\n\n".
+                "Usage: `https://example.com`\n".
+                "Usage: `https://example.com file name.ext`\n\n".
+                "I can also rename Telegram files, just send me any file and I will rename it!\n\n".
+                "Max 1.5GB, parallel upload and download powered by @MadelineProto.";
+    const ADMIN = 'danogentili';
 
-    public function __construct($MadelineProto)
-    {
-        parent::__construct($MadelineProto);
-    }
-
+    /**
+     * Array of media objects.
+     *
+     * @var array
+     */
+    private $states = [];
     public function onUpdateNewChannelMessage($update)
     {
-        yield $this->onUpdateNewMessage($update);
+        //yield $this->onUpdateNewMessage($update);
     }
-
-    public function onUpdateNewMessage($update)
+    public function report($message)
     {
         try {
-            $files = yield Amp\File\scandir(FILES_PATH);
-            echo json_encode($files);
-            foreach ($files as $file) {
-                $ctime = yield Amp\File\ctime(FILES_PATH.'/'.$file);
-                echo(time() - $ctime).PHP_EOL.PHP_EOL.PHP_EOL.PHP_EOL.PHP_EOL;
-                if (time() - $ctime > FILES_EXPIRE_TIME) {
-                    yield Amp\File\unlink(FILES_PATH.'/'.$file);
-                }
-            }
-        } catch (Exception $e) {
+            $this->messages->sendMessage(['peer' => self::ADMIN, 'message' => $message]);
+        } catch (\Throwable $e) {
+            $this->logger("While reporting: $e", Logger::FATAL_ERROR);
         }
-        if (isset($update['message']['out']) && $update['message']['out']) {
+    }
+    public function onUpdateNewMessage($update)
+    {
+        if ($update['message']['out'] ?? false) {
+            return;
+        }
+        if ($update['message']['_'] !== 'message') {
             return;
         }
 
         try {
-            if (isset($update['message']['media']) && ($update['message']['media']['_'] == 'messageMediaPhoto' || $update['message']['media']['_'] == 'messageMediaDocument')) {
-                $message_id = $update['message']['id'];
-                $sent_message = yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Generating download link… 0%', 'reply_to_msg_id' => $message_id]);
-                $time = time();
-                $last_progress = 0;
-                $queue_id = $this->randomString().time();
-                $output_file_name = yield $this->download_to_dir($update, new \danog\MadelineProto\FileCallback(
-                    FILES_PATH,
-                    function ($progress) use ($update, $sent_message, &$last_progress, $queue_id) {
-                        $progress = round($progress);
-                        if ($progress > $last_progress + 4) {
-                            $last_progress = $progress;
+            $peer = yield $this->getInfo($update);
+            $peerId = $peer['bot_api_id'];
+            $messageId = $update['message']['id'];
 
-                            try {
-                                yield $this->messages->editMessage(['id' => $sent_message['id'], 'peer' => $update, 'message' => 'Generating download link… '.$progress.'%'], ['queue' => $queue_id]);
-                            } catch (Exception $e) {
-                            }
-                        }
-                    }
-                ));
-                yield $this->messages->editMessage(['id' => $sent_message['id'], 'peer' => $update, 'message' => 'Download link Generated in '.(time() - $time)." seconds!\n\n💾 ".basename($output_file_name)."\n\n📥 ".rtrim(WEBSERVER_BASE_URL, '/').'/'.str_replace(__DIR__.'/', '', str_replace(' ', '%20', $output_file_name))."\n\nThis link will be expired in 24 hours.", 'reply_to_msg_id' => $message_id], ['queue' => $queue_id]);
-            } elseif (isset($update['message']['message'])) {
-                $message_id = $update['message']['id'];
-                $text = $update['message']['message'];
-                $chat_id = $update['message']['from_id'];
-                if ($text == '/start') {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Hi! please send me any file url or file uploaded in Telegram and I will upload to Telegram as file or generate download link of that file. \n Kindly Donate @ConQuerorRobot If You Like This \n Support Group @CuratorCrew', 'reply_to_msg_id' => $message_id]);
+            if ($update['message']['message'] === '/start') {
+                return $this->messages->sendMessage(['peer' => $peerId, 'message' => self::START, 'parse_mode' => 'Markdown', 'reply_to_msg_id' => $messageId]);
+            }
+            if (isset($update['message']['media']['_']) && $update['message']['media']['_'] !== 'messageMediaWebPage') {
+                yield $this->messages->sendMessage(['peer' => $peerId, 'message' => 'Give me a new name for this file: ', 'reply_to_msg_id' => $messageId]);
+                $this->states[$peerId] = $update['message']['media'];
 
+                return;
+            }
+            if (isset($this->states[$peerId])) {
+                $name = $update['message']['message'];
+                $url = $this->states[$peerId];
+                unset($this->states[$peerId]);
+            } else {
+                $url = \explode(' ', $update['message']['message'], 2);
+                $name = \trim($url[1] ?? \basename($update['message']['message']));
+                $url = \trim($url[0]);
+                if (!$url) {
                     return;
                 }
-                if ($text == '/speedtest') {
-                    if (isset($this->latest_speedtest[$chat_id]) && time() - $this->latest_speedtest[$chat_id] < 3600) {
-                        yield $this->messages->sendMessage(['peer' => $update, 'message' => 'You can test speed once per hour.', 'reply_to_msg_id' => $message_id]);
-
-                        return;
-                    }
-                    $this->latest_speedtest[$chat_id] = time();
-                    $sent_message = yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Testing download and upload speed…', 'reply_to_msg_id' => $message_id]);
-                    $process = new Amp\Process\Process('speedtest');
-                    yield $process->start();
-                    $output = yield Amp\ByteStream\buffer($process->getStdout());
-                    if (preg_match_all('/(Down|Up)load:.*/', $output, $output)) {
-                        $result = '';
-                        foreach ($output[0] as $line) {
-                            $result .= $line."\n";
-                        }
-                        yield $this->messages->editMessage(['id' => $sent_message['id'], 'peer' => $update, 'message' => $result]);
-                    } else {
-                        yield $this->messages->editMessage(['id' => $sent_message['id'], 'peer' => $update, 'message' => 'Error while testing speed.']);
-                    }
-
-                    return;
-                }
-                $url = filter_var($text, FILTER_VALIDATE_URL);
-                if ($url === false) {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'URL format is incorrect. make sure your URL starts with either http:// or https://.', 'reply_to_msg_id' => $message_id]);
-
-                    return;
-                }
-                $filename = explode('|', $text);
-                if (!empty($filename[1])) {
-                    $filename = $filename[1];
-                } else {
-                    $filename = basename($url);
-                }
-                if (empty($filename)) {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Can you check your URL? I\'m unable to detect filename from the URL.', 'reply_to_msg_id' => $message_id]);
-
-                    return;
-                }
-                $filename_length = $filename;
-                $client = new Amp\Artax\DefaultClient();
-                $promise = $client->request($url, [Amp\Artax\Client::OP_MAX_BODY_BYTES => (int) (1.5 * (1024 ** 3))]);
-                $response = yield $promise;
-                $headers = $response->getHeaders();
-                if (empty($headers['content-length'][0])) {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Unable to obtain file size.', 'reply_to_msg_id' => $message_id]);
-
-                    return;
-                }
-                $filesize = $headers['content-length'][0];
-                if ($filesize > 1024 ** 3) {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Your file should be snakker than 1 GB.', 'reply_to_msg_id' => $message_id]);
-
-                    return;
-                }
-                $sent_message = yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Downloading file from URL…', 'reply_to_msg_id' => $message_id]);
-                $filepath = FILES_PATH.'/'.time().rand().'_'.$filename;
-                $file = yield Amp\File\open($filepath, 'w');
-                yield Amp\ByteStream\pipe($response->getBody(), $file);
-                yield $file->close();
-                Amp\File\StatCache::clear($filepath);
-                yield $this->messages->editMessage(['id' => $sent_message['id'], 'peer' => $update, 'message' => "📤 Your request is in the queue. Do not send another request. Please be patient…\n🗂 File: ".$filename."\n🔗 URL: ".$url."\n💿 File Size: ".$this->formatBytes($filesize)."\n\n⌛ Upload progress: 0%"]);
-                $time = time();
-                $last_progress = 0;
-                $queue_id = $this->randomString().time();
-                yield $this->messages->sendMedia([
-                    'peer'  => $update,
-                    'media' => [
-                        '_'    => 'inputMediaUploadedDocument',
-                        'file' => new \danog\MadelineProto\FileCallback($filepath, function ($progress) use ($update, $sent_message, &$last_progress, $filename, $filesize, $url, $queue_id) {
-                            $progress = round($progress);
-                            if ($progress > $last_progress + 4) {
-                                $last_progress = $progress;
-
-                                try {
-                                    yield $this->messages->editMessage(['peer' => $update, 'id' => $sent_message['id'], 'message' => "📤 Your request is in the queue. Do not send another request. Please be patient…\n🗂 File: ".$filename."\n🔗 URL: ".$url."\n💿 File Size: ".$this->formatBytes($filesize)."\n\n⌛ Upload progress: ".$progress.'%'], ['queue' => $queue_id]);
-                                } catch (Exception $e) {
-                                }
-                            }
-                        }),
-                        'attributes' => [['_' => 'documentAttributeFilename', 'file_name' => $filename]],
-                    ],
-                    'reply_to_msg_id' => $message_id,
-                ]);
-                $time = explode(':', gmdate('H:i:s', time() - $time));
-                foreach ($time as &$value) {
-                    $value = ltrim($value, '0');
-                }
-                $text = 'Uploaded… 100% in';
-                if (!empty($time[0])) {
-                    $text .= ' '.$time[0].'h';
-                }
-                if (!empty($time[1])) {
-                    $text .= ' '.$time[1].'m';
-                }
-                if (!empty($time[2])) {
-                    $text .= ' '.$time[2].'s';
-                }
-                yield $this->messages->editMessage(['id' => $sent_message['id'], 'peer' => $update, 'message' => $text], ['queue' => $queue_id]);
-                if (file_exists($filepath)) {
-                    unlink($filepath);
+                if (\strpos($url, 'http') !== 0) {
+                    $url = "http://$url";
                 }
             }
-        } catch (Exception $e) {
+            $id = yield $this->messages->sendMessage(['peer' => $peerId, 'message' => 'Preparing...', 'reply_to_msg_id' => $messageId]);
+            if (!isset($id['id'])) {
+                $this->report(\json_encode($id));
+                foreach ($id['updates'] as $updat) {
+                    if (isset($updat['id'])) {
+                        $id = $updat['id'];
+                        break;
+                    }
+                }
+            } else {
+                $id = $id['id'];
+            }
+
+            $url = new \danog\MadelineProto\FileCallback(
+                $url,
+                function ($progress, $speed, $time) use ($peerId, $id) {
+                    $this->logger("Upload progress: $progress%");
+
+                    static $prev = 0;
+                    $now = \time();
+                    if ($now - $prev < 10 && $progress < 100) {
+                        return;
+                    }
+                    $prev = $now;
+                    try {
+                        yield $this->messages->editMessage(['peer' => $peerId, 'id' => $id, 'message' => "Upload progress: $progress%\nSpeed: $speed mbps\nTime elapsed since start: $time"], ['FloodWaitLimit' => 0]);
+                    } catch (\danog\MadelineProto\RPCErrorException $e) {
+                    }
+                }
+            );
+            yield $this->messages->sendMedia(
+                [
+                    'peer' => $peerId,
+                    'reply_to_msg_id' => $messageId,
+                    'media' => [
+                        '_' => 'inputMediaUploadedDocument',
+                        'file' => $url,
+                        'attributes' => [
+                            ['_' => 'documentAttributeFilename', 'file_name' => $name]
+                        ]
+                    ],
+                    'message' => 'Powered by @MadelineProto!',
+                    'parse_mode' => 'Markdown'
+                ]
+            );
+
+            if (\in_array($peer['type'], ['channel', 'supergroup'])) {
+                yield $this->channels->deleteMessages(['channel' => $peerId, 'id' => [$id]]);
+            } else {
+                yield $this->messages->deleteMessages(['revoke' => true, 'id' => [$id]]);
+            }
+        } catch (\Throwable $e) {
+            if (\strpos($e->getMessage(), 'Could not connect to URI') === false && !($e instanceof UriException) && \strpos($e->getMessage(), 'URI') === false) {
+                $this->report((string) $e);
+                $this->logger((string) $e, \danog\MadelineProto\Logger::FATAL_ERROR);
+            }
+            try {
+                yield $this->messages->editMessage(['peer' => $peerId, 'id' => $id, 'message' => 'Error: '.$e->getMessage()]);
+            } catch (\Throwable $e) {
+                $this->logger((string) $e, \danog\MadelineProto\Logger::FATAL_ERROR);
+            }
         }
-    }
-
-    private function formatBytes($bytes, $precision = 2)
-    {
-        $units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-        $bytes = max($bytes, 0);
-        $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
-        $pow = min($pow, count($units) - 1);
-        $bytes /= pow(1024, $pow);
-
-        return round($bytes, $precision).' '.$units[$pow];
-    }
-
-    private function randomString($length = 10)
-    {
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $charactersLength = strlen($characters);
-        $randomString = '';
-        for ($i = 0; $i < $length; $i++) {
-            $randomString .= $characters[rand(0, $charactersLength - 1)];
-        }
-
-        return $randomString;
     }
 }
+$settings = [
+    'logger' => [
+        'logger_level' => 4
+    ],
+    'serialization' => [
+        'serialization_interval' => 30
+    ],
+    'connection_settings' => [
+       'media_socket_count' => [
+           'min' => 5,
+           'max' => 1000,
+       ]
+    ],
+    'upload' => [
+        'allow_automatic_upload' => false, // IMPORTANT: for security reasons, upload by URL will still be allowed
+        'parallel_chunks' => 3
+    ],
+    'download' => [
+        'parallel_chunks' => 3
+    ],
+];
 
-$MadelineProto = new \danog\MadelineProto\API('filer.madeline');
+$MadelineProto = new \danog\MadelineProto\API(($argv[1] ?? 'bot').'.madeline', $settings);
 $MadelineProto->async(true);
-$MadelineProto->loop(function () use ($MadelineProto) {
-    yield $MadelineProto->start();
-    yield $MadelineProto->setEventHandler('\EventHandler');
-});
-
-try {
-    $MadelineProto->loop();
-} catch (Exception $e) {
+while (true) {
+    try {
+        $MadelineProto->loop(function () use ($MadelineProto) {
+            yield $MadelineProto->start();
+            yield $MadelineProto->setEventHandler('\EventHandler');
+        });
+        $MadelineProto->loop();
+    } catch (\Throwable $e) {
+        try {
+            $MadelineProto->logger("Surfaced: $e");
+            $MadelineProto->getEventHandler(['async' => false])->report("Surfaced: $e");
+        } catch (\Throwable $e) {
+        }
+    }
 }
